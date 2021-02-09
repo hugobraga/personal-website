@@ -1,13 +1,18 @@
+// https://www.npmjs.com/package/react-social-media-buttons
+
 import SocialMediaButtons from 'react-social-media-buttons';
 
-const SocialMedialButton = () => {
+const SMButtons2 = () => {
     const links = ['https://www.linkedin.com/in/bragahugo',
         'https://www.instagram.com/hugovvbraga',
-        'http://twitter.com/_hugobraga'];
+        'http://twitter.com/_hugobraga',
+        'https://t.me/bragah',
+        'skype:hugobraga85'];
 
     const buttonStyle = {
         backgroundColor: '#000000',
-        borderRadius: '50%',
+        borderRadius: '30%',
+        margin: '0px 10px',
     };
 
     const iconStyle = { color: '#ffffff' };
@@ -24,4 +29,4 @@ const SocialMedialButton = () => {
     );
 }
 
-export default SocialMedialButton;
+export default SMButtons2;

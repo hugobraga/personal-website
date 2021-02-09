@@ -1,5 +1,5 @@
 import React from 'react';
-import SocialMedialButton from '../components/SocialMediaButton';
+import SMButtons from '../components/SMButtons';
 
 // import './Microblog.css';
 
@@ -13,7 +13,7 @@ const Microblog = () => {
             <h2>I'm open to IoT Entrepreneurship!</h2>
             <h2>Let's innovate in state of Amazonas</h2>
             <h2>------------------------</h2>
-            <SocialMedialButton />
+            <SMButtons />
         </div>
     );
 };

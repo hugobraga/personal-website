@@ -1,7 +1,10 @@
 import React from 'react';
 import SMButtons from '../components/SMButtons';
+// import Hr from 'react-native-hr-component';
+// import { Divider } from 'react-native-elements';
 
 // import './Microblog.css';
+{/* <Hr lineColor='#b3b3b3'/> */}
 
 const Microblog = () => {
     return (

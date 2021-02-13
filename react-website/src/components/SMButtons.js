@@ -3,10 +3,11 @@
 // import React from 'react';
 // import ReactDOM from 'react-dom';
 import { SocialIcon } from 'react-social-icons';
+import "../pages/Microblog.css";
 
 const SMButtons = () => {
     return (
-        <div>
+        <div className="hor-centered">
             <SocialIcon
                 url="http://linkedin.com/in/bragahugo"
                 target="_blank"

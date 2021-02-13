@@ -11,18 +11,22 @@ const SMButtons = () => {
             <SocialIcon
                 url="http://linkedin.com/in/bragahugo"
                 target="_blank"
-                bgColor="#0a66c2"
+                // bgColor="#0a66c2"
+                bgColor="#0085ae"
+                fgColor="#ffffff"
             />
 
             <SocialIcon
                 url="http://instagram.com/hugovvbraga"
                 target="_blank"
                 bgColor="#d6249f"
+                fgColor="#ffffff"
             />
 
             <SocialIcon
                 url="http://twitter.com/_hugobraga"
                 target="_blank"
+                fgColor="#ffffff"
             />
         </div>
     );

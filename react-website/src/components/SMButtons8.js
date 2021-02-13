@@ -22,44 +22,52 @@ const SMButtons8 = () => {
   const classes = useStyles();
 
   return (
-    <Grid>
+    <Grid 
+    container 
+    direction="column" 
+    justify="center" 
+    alignItems="center"
+    >
       <Button
         variant="outlined"
         className={classes.button}
         onClick={() => {
-            window.open("http://linkin.bio/hugovvbraga", "_blank");
-        //   window.location.href = "http://linkin.bio/hugovvbraga";
+          window.open("http://linkin.bio/hugovvbraga", "_blank");
+          //   window.location.href = "http://linkin.bio/hugovvbraga";
         }}
       >
         <Instagram className={classes.icon} /> Instagram links
       </Button>
-      <Button variant="outlined" className={classes.button}
+      <Button
+        variant="outlined"
+        className={classes.button}
         onClick={() => {
-            window.open("http://wa.me/+5571992682584", "_blank");
-            // window.location.href = "http://wa.me/+5571992682584";
-          }}  
+          window.open("http://wa.me/+5571992682584", "_blank");
+          // window.location.href = "http://wa.me/+5571992682584";
+        }}
       >
         <Whatsapp className={classes.icon} /> Contact me
       </Button>
       <Button
-      variant="outlined"
-      className={classes.button}
-      onClick={() => {
-          window.open("https://drive.google.com/file/d/1CvUlSSo4SrD5u09h3TDK8V5PRLqLbJEm/view?usp=sharing", "_blank");
-      }
-      }
+        variant="outlined"
+        className={classes.button}
+        onClick={() => {
+          window.open(
+            "https://drive.google.com/file/d/1CvUlSSo4SrD5u09h3TDK8V5PRLqLbJEm/view?usp=sharing",
+            "_blank"
+          );
+        }}
       >
-          Curriculum Vitae
+        Curriculum Vitae
       </Button>
       <Button
-      variant="outlined"
-      className={classes.button}
-      onClick={() => {
+        variant="outlined"
+        className={classes.button}
+        onClick={() => {
           window.open("https://sites.google.com/site/hugobraga", "_blank");
-      }
-      }
+        }}
       >
-          Personal Website
+        Personal Website
       </Button>
     </Grid>
   );

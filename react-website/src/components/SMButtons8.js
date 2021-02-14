@@ -102,6 +102,17 @@ const SMButtons8 = () => {
       >
         Personal Website
       </Button>
+      <Button
+        variant="outlined"
+        className={classes.button}
+        onClick={(e) => {
+          window.location = "mailto:hugo@hugobraga.io";
+          e.preventDefault();
+
+        }}
+      >
+        Write me an E-Mail
+      </Button>      
     </Grid>
   );
 };

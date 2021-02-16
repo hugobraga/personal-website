@@ -33,6 +33,7 @@ import {
 } from 'react-router-dom';
 
 import Microblog from './pages/Microblog';
+import Instalinks from './pages/Instalinks';
 // import NewPlace from './places/pages/NewPlace';
 
 const App = () => {
@@ -42,6 +43,9 @@ const App = () => {
         <Route path="/" exact>
           <Microblog />
         </Route>
+        <Route path="/instalinks" exact>
+          <Instalinks />
+        </Route>        
         <Redirect to="/" />
       </Switch>
     </Router>

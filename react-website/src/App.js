@@ -34,6 +34,8 @@ import {
 
 import Microblog from './pages/Microblog';
 import Instalinks from './pages/Instalinks';
+import Instalinks2 from './pages/Instalinks2';
+import Instalinks3 from './pages/Instalinks3';
 // import NewPlace from './places/pages/NewPlace';
 
 const App = () => {
@@ -43,8 +45,8 @@ const App = () => {
         <Route path="/" exact>
           <Microblog />
         </Route>
-        <Route path="/instalinks" exact>
-          <Instalinks />
+        <Route path="/instalinks3" exact>
+          <Instalinks3 />
         </Route>        
         <Redirect to="/" />
       </Switch>

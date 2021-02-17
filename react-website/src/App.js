@@ -43,7 +43,7 @@ const App = () => {
     <Router>
       <Switch>
         <Route path="/" exact>
-          <Microblog />
+          <Instalinks3 />
         </Route>
         <Route path="/instalinks3" exact>
           <Instalinks3 />

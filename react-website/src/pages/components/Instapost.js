@@ -16,11 +16,16 @@ const Instapost = (props) => {
 
           return (
             <a target="_blank" href={props.link}>
-              <img src={display_url} alt={caption} width="25%%" />
+              <img
+                key={display_url}
+                src={display_url}
+                alt={caption}
+                width="25%%"
+              />
             </a>
           );
         }}
-        renderMediaList={(children) => <div className="swiper">{children}</div>}
+        // renderMediaList={(children) => <div className="swiper">{children}</div>}
         renderError={() => <div>I have failed to parse it</div>}
         renderLoading={() => <div>Loading</div>}
       />

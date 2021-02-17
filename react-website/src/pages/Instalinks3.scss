@@ -124,11 +124,11 @@ body {
     display: block;
   }
   &:hover {
-    &:before,
-    &:after {
-      opacity: 1;
-      transition: 0.3s opacity ease;
-    }
+    // &:before,
+    // &:after {
+    //   opacity: 1;
+    //   transition: 0.3s opacity ease;
+    // }
   }
 }
 

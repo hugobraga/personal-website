@@ -1,8 +1,10 @@
 // https://codepen.io/tvweinstock/pen/wegZEW
 import React from "react";
-// import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom';
 import "./Instalinks3.scss";
 import Instapost from "./components/Instapost";
+import Instapost2 from "./components/Instapost2";
+import Instapost3 from "./components/Instapost3";
 
 // const imgUrls = ['https://source.unsplash.com/PC_lbSSxCZE/800x600','https://source.unsplash.com/lVmR1YaBGG4/800x600','https://source.unsplash.com/5KvPQc1Uklk/800x600','https://source.unsplash.com/GtYFwFrFbMA/800x600','https://source.unsplash.com/Igct8iZucFI/800x600','https://source.unsplash.com/M01DfkOqz7I/800x600','https://source.unsplash.com/MoI_cHNcSK8/800x600','https://source.unsplash.com/M0WbGFRTXqU/800x600','https://source.unsplash.com/s48nn4NtlZ4/800x600','https://source.unsplash.com/E4944K_4SvI/800x600','https://source.unsplash.com/F5Dxy9i8bxc/800x600','https://source.unsplash.com/iPum7Ket2jo/800x600'];
 const imgUrls = [
@@ -20,6 +22,12 @@ const imgUrls = [
 "/p/CKQz5oIgOpE/"
 ];
 const imgLinks = [
+  // "https://pecepoli.com.br/PT/IOT/", 
+  // "https://www.youtube.com/channel/UCCNqpIknWKoRyzy-5rSL4bQ", 
+  // "https://iotslam.com/iot-slam-conference-registration/",
+  // "https://pecepoli.com.br/PT/IOT/", 
+  // "https://www.youtube.com/channel/UCCNqpIknWKoRyzy-5rSL4bQ", 
+  // "https://iotslam.com/iot-slam-conference-registration/"
   "https://pecepoli.com.br/PT/IOT/", 
   "https://www.youtube.com/channel/UCCNqpIknWKoRyzy-5rSL4bQ", 
   "https://iotslam.com/iot-slam-conference-registration/",
@@ -28,7 +36,7 @@ const imgLinks = [
   "https://iotslam.com/iot-slam-conference-registration/"
 ];
 
-class Instalinks3 extends React.Component {
+class Instalinks4 extends React.Component {
   constructor(props) {
     super(props);
     this.state = { currentIndex: null };
@@ -42,7 +50,7 @@ class Instalinks3 extends React.Component {
       <div 
       // onClick={(e) => this.openModal(e, index)}
       >
-          <Instapost
+          <Instapost3
             post={src}
             link={link}
           />
@@ -119,10 +127,11 @@ class GalleryModal extends React.Component {
   render () {
     const { closeModal, hasNext, hasPrev, findNext, findPrev, src, link } = this.props;
     if (!src) {
-      console.log('whut')
+      console.log('whut');
       return null;
     }
-    console.log(link);
+    // var temp = ['src: ', src];
+    // console.log(temp);
     return (
       <div>
         <div className="modal-overlay" onClick={closeModal}></div>
@@ -143,7 +152,7 @@ class GalleryModal extends React.Component {
             >
               {/* &rsaquo; */}
             </a>}
-            <Instapost
+            <Instapost3
             post={src}
             link={link}
           />
@@ -157,4 +166,4 @@ class GalleryModal extends React.Component {
 
 // ReactDOM.render(<Instalinks3 />, document.querySelector('.gallery-container'));
 
-export default Instalinks3;
+export default Instalinks4;

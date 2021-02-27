@@ -1,6 +1,5 @@
 {
     "routes": [
-      { "src": "/" },
-      { "src": "/instalinks" }
+      { "src": "/(.*)", "dest": "/" }
     ]
   }

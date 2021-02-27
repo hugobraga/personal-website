@@ -3,11 +3,7 @@ import SMButtons from "../components/SMButtons";
 import "./Microblog.css";
 import ReactRoundedImage from "react-rounded-image";
 import MyPhoto from "./images/rosto.jpeg";
-import ReactWhatsapp from "react-whatsapp";
-import WhatsAppWidget from "react-whatsapp-widget";
 import "react-whatsapp-widget/dist/index.css";
-import SMButtons6 from "../components/SMButtons6";
-import SMButtons7 from "../components/SMButtons7";
 import SMButtons8 from "../components/SMButtons8";
 
 const Microblog = () => {

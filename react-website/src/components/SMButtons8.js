@@ -3,6 +3,9 @@ import { Grid, Button, makeStyles, withTheme } from "@material-ui/core";
 import "./SMButtons8.css";
 import { SocialIcon } from "react-social-icons";
 
+// import "./icons/EmailIcon";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import {
   Instagram,
   Whatsapp,
@@ -102,6 +105,19 @@ const SMButtons8 = () => {
       >
         Personal Website
       </Button>
+      <Button
+        variant="outlined"
+        className={classes.button}
+        onClick={(e) => {
+          window.location = "mailto:hugo@hugobraga.io";
+          e.preventDefault();
+
+        }}
+      >
+        {/* <FontAwesomeIcon icon={['fas', 'fa-envelope-square']} /> */}
+        {/* <EmailIcon /> */}
+        Write me an E-Mail
+      </Button>      
     </Grid>
   );
 };

@@ -33,9 +33,9 @@ import {
 } from 'react-router-dom';
 
 import Microblog from './pages/Microblog';
-import Instalinks1 from './pages/Instalinks1';
-import Instalinks2 from './pages/Instalinks2';
-import Instalinks3 from './pages/Instalinks3';
+// import Instalinks1 from './pages/Instalinks1';
+// import Instalinks2 from './pages/Instalinks2';
+// import Instalinks3 from './pages/Instalinks3';
 // import Instalinks4 from './pages/Instalinks4';
 // import Instalinks5 from './pages/Instalinks5';
 // import NewPlace from './places/pages/NewPlace';

@@ -8,6 +8,7 @@ import "react-whatsapp-widget/dist/index.css";
 import SMButtons6 from "../components/SMButtons6";
 import SMButtons7 from "../components/SMButtons7";
 import InstaButtons from "../components/InstaButtons";
+import { Link } from "react-router-dom";
 
 const Instalinks = () => {
   return (
@@ -25,8 +26,9 @@ const Instalinks = () => {
         <span className={["myname"]}>Hugo Braga</span>
       </div>
       <h2></h2>
+      <p className="hor-centered">Links do Instagram</p>
       <p className="hor-centered">
-        Links do Instagram
+        <Link to="/">Home</Link>
       </p>
       <p>
         <span className="linha-separadora">___________________________</span>

@@ -11,6 +11,8 @@ import {
   Whatsapp,
 } from "@trejgun/material-ui-icons-social-networks";
 
+import { Link } from "react-router-dom";
+
 const useStyles = makeStyles(
   (theme) => ({
     button: {
@@ -29,6 +31,11 @@ const useStyles = makeStyles(
       width: "50%",
       fontWeight: "bold",
     },
+    instalink: {
+      color: "white",
+      fontWeight: "bold",
+      textDecoration: "none"
+    },    
     whatsappbutton: {
       margin: theme.spacing(1),
       backgroundColor: "limegreen",
@@ -62,18 +69,14 @@ const SMButtons8 = () => {
           network="whatsapp"
           bgColor="limegreen"
           fgColor="#ffffff"
-          style={{ height: 20, width: 20}}
-        />        
+          style={{ height: 20, width: 20 }}
+        />
         {/* <Whatsapp className={classes.icon} />  */}
         Contact me
       </Button>
       <Button
         variant="outlined"
         className={classes.instabutton}
-        onClick={() => {
-          window.open("http://linkin.bio/hugovvbraga", "_blank");
-          //   window.location.href = "http://linkin.bio/hugovvbraga";
-        }}
       >
         <SocialIcon
           network="instagram"
@@ -82,7 +85,7 @@ const SMButtons8 = () => {
           style={{ height: 20, width: 20 }}
         />
         {/* <Instagram className={classes.icon} />  */}
-        Instagram links
+        <Link className={classes.instalink} to="/instalinks">Instagram Links</Link>
       </Button>
       <Button
         variant="outlined"
@@ -111,13 +114,12 @@ const SMButtons8 = () => {
         onClick={(e) => {
           window.location = "mailto:hugo@hugobraga.io";
           e.preventDefault();
-
         }}
       >
         {/* <FontAwesomeIcon icon={['fas', 'fa-envelope-square']} /> */}
         {/* <EmailIcon /> */}
         Write me an E-Mail
-      </Button>      
+      </Button>
     </Grid>
   );
 };

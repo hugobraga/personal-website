@@ -24,6 +24,15 @@ const InstaButtons = () => {
 
   return (
     <Grid container direction="column" justify="center" alignItems="center">
+     <Button
+        variant="outlined"
+        className={classes.button}
+        onClick={() => {
+          window.open("https://pecepoli.com.br/PT/IOT/", "_blank");
+        }}
+      >
+        Solução fim-a-fim com PySpark e Draco (Mar/21)
+      </Button>
       <Button
         variant="outlined"
         className={classes.button}

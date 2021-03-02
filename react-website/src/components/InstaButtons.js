@@ -28,7 +28,7 @@ const InstaButtons = () => {
         variant="outlined"
         className={classes.button}
         onClick={() => {
-          window.open("http://bit.ly/3qP7MgW", "_blank");
+          window.open("http://bit.ly/3qPyMgW", "_blank");
         }}
       >
         Solução fim-a-fim com PySpark e Draco (Mar/21)

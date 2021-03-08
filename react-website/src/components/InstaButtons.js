@@ -28,6 +28,15 @@ const InstaButtons = () => {
         variant="outlined"
         className={classes.button}
         onClick={() => {
+          window.open("https://www.datasciencecentral.com/profiles/blogs/new-books-and-resources-for-dsc-members", "_blank");
+        }}
+      >
+        Livros grátis de Data Science na DSC
+     </Button>
+     <Button
+        variant="outlined"
+        className={classes.button}
+        onClick={() => {
           window.open("http://bit.ly/3qPyMgW", "_blank");
         }}
       >

@@ -102,15 +102,6 @@ const SMButtons8 = () => {
       <Button
         variant="outlined"
         className={classes.button}
-        onClick={() => {
-          window.open("https://sites.google.com/site/hugobraga", "_blank");
-        }}
-      >
-        Personal Website
-      </Button>
-      <Button
-        variant="outlined"
-        className={classes.button}
         onClick={(e) => {
           window.location = "mailto:hugo@hugobraga.io";
           e.preventDefault();
@@ -119,6 +110,15 @@ const SMButtons8 = () => {
         {/* <FontAwesomeIcon icon={['fas', 'fa-envelope-square']} /> */}
         {/* <EmailIcon /> */}
         Write me an E-Mail
+      </Button>
+      <Button
+        variant="outlined"
+        className={classes.button}
+        onClick={() => {
+          window.open("https://sites.google.com/site/hugobraga", "_blank");
+        }}
+      >
+        Personal Website
       </Button>
     </Grid>
   );

@@ -28,6 +28,15 @@ const InstaButtons = () => {
         variant="outlined"
         className={classes.button}
         onClick={() => {
+          window.open("https://www.iotday.org", "_blank");
+        }}
+      >
+        IoTDay
+     </Button>
+     <Button
+        variant="outlined"
+        className={classes.button}
+        onClick={() => {
           window.open("https://www.datasciencecentral.com/profiles/blogs/new-books-and-resources-for-dsc-members", "_blank");
         }}
       >

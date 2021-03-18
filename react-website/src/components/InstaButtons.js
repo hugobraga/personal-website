@@ -28,6 +28,15 @@ const InstaButtons = () => {
         variant="outlined"
         className={classes.button}
         onClick={() => {
+          window.open("https://www.trifacta.com/events/wrangle-summit-2021/", "_blank");
+        }}
+      >
+        Wrangler Summit (Abr/21)
+     </Button>      
+     <Button
+        variant="outlined"
+        className={classes.button}
+        onClick={() => {
           window.open("https://www.iotday.org", "_blank");
         }}
       >

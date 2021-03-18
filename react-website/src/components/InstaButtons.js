@@ -31,7 +31,7 @@ const InstaButtons = () => {
           window.open("https://www.trifacta.com/events/wrangle-summit-2021/", "_blank");
         }}
       >
-        Wrangler Summit (Abr/21)
+        Wrangle Summit (Abr/21)
      </Button>      
      <Button
         variant="outlined"

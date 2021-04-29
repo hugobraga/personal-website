@@ -28,6 +28,15 @@ const InstaButtons = () => {
         variant="outlined"
         className={classes.button}
         onClick={() => {
+          window.open("https://www.iotsworldcongress.com/activities/digital-summit/", "_blank");
+        }}
+      >
+        IoT Solutions World Congress (Mai/21)
+     </Button>    
+     <Button
+        variant="outlined"
+        className={classes.button}
+        onClick={() => {
           window.open("https://www.trifacta.com/events/wrangle-summit-2021/", "_blank");
         }}
       >

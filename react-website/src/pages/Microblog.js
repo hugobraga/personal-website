@@ -35,7 +35,10 @@ const Microblog = () => {
       </p>
       <p className="hor-centered">I'm open to IoT Entrepreneurship!</p>
       <p className="hor-centered">
-        Let's innovate in Amazonas state
+        Let's innovate in Amazonas state,
+      </p>
+      <p className="hor-centered">
+        heart of the Amazon forest
         <span className="small-picture">🌳</span>
       </p>
       <p>

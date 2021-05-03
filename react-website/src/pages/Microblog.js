@@ -38,7 +38,7 @@ const Microblog = () => {
         Let's innovate in Amazonas state,
       </p>
       <p className="hor-centered">
-        heart of the Amazon Forest
+        heart of the Amazon Rainforest
         <span className="small-picture">🌳</span>
       </p>
       <p>

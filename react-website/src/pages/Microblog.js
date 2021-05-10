@@ -33,7 +33,7 @@ const Microblog = () => {
       <p>
         <span className="linha-separadora">___________________________</span>
       </p>
-      <p className="hor-centered">I'm open to IoT Entrepreneurship!</p>
+      <p className="hor-centered">I'm open to Entrepreneurship!</p>
       <p className="hor-centered">
         Let's innovate in Amazonas state,
       </p>

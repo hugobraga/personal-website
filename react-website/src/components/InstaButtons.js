@@ -28,6 +28,15 @@ const InstaButtons = () => {
         variant="outlined"
         className={classes.button}
         onClick={() => {
+          window.open("https://amazonialegalemdados.info", "_blank");
+        }}
+      >
+        Amazônia Legal em Dados
+     </Button>
+     <Button
+        variant="outlined"
+        className={classes.button}
+        onClick={() => {
           window.open("https://www.iotsworldcongress.com/activities/digital-summit/", "_blank");
         }}
       >

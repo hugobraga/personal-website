@@ -28,6 +28,15 @@ const InstaButtons = () => {
         variant="outlined"
         className={classes.button}
         onClick={() => {
+          window.open("https://linktr.ee/casaraodainovacaocassina", "_blank");
+        }}
+      >
+        Casarão da Inovação Cassina
+     </Button>      
+     <Button
+        variant="outlined"
+        className={classes.button}
+        onClick={() => {
           window.open("https://amazonialegalemdados.info", "_blank");
         }}
       >

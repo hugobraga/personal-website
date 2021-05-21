@@ -28,6 +28,11 @@ const SMButtons = () => {
                 target="_blank"
                 fgColor="#ffffff"
             />
+            <SocialIcon
+                url="https://t.me/bragah"
+                target="_blank"
+                fgColor="#ffffff"
+            />            
         </div>
     );
 }

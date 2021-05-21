@@ -29,7 +29,7 @@ const SMButtons = () => {
                 fgColor="#ffffff"
             />
             <SocialIcon
-                url="https://t.me/bragah"
+                url="https://telegram.me/bragah"
                 target="_blank"
                 fgColor="#ffffff"
             />            

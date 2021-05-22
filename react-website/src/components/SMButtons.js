@@ -27,13 +27,7 @@ const SMButtons = () => {
                 url="http://twitter.com/_hugobraga"
                 target="_blank"
                 fgColor="#ffffff"
-            />
-            <SocialIcon
-                url="https://telegram.me/bragah"
-                network="telegram"
-                target="_blank"
-                fgColor="#ffffff"
-            />            
+            />     
         </div>
     );
 }

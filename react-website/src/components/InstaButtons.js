@@ -28,6 +28,15 @@ const InstaButtons = () => {
         variant="outlined"
         className={classes.button}
         onClick={() => {
+          window.open("https://sebrae.com.br/inovaamazonia", "_blank");
+        }}
+      >
+        Inova Amazônia
+     </Button>      
+     <Button
+        variant="outlined"
+        className={classes.button}
+        onClick={() => {
           window.open("https://linktr.ee/casaraodainovacaocassina", "_blank");
         }}
       >

@@ -28,11 +28,20 @@ const InstaButtons = () => {
         variant="outlined"
         className={classes.button}
         onClick={() => {
+          window.open("https://emergebrasil.in/amazonia/", "_blank");
+        }}
+      >
+        Emerge Amazônia
+     </Button>
+     <Button
+        variant="outlined"
+        className={classes.button}
+        onClick={() => {
           window.open("https://sebrae.com.br/inovaamazonia", "_blank");
         }}
       >
         Inova Amazônia
-     </Button>      
+     </Button>     
      <Button
         variant="outlined"
         className={classes.button}

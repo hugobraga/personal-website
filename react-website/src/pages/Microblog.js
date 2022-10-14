@@ -24,7 +24,7 @@ const Microblog = () => {
 
       <p className="hor-centered">
         <span className="small-picture">💡</span>
-        IoT Enthusiast
+        Entrepreneur
       </p>
       <p className="hor-centered">
         <span className="small-picture">🎓</span>

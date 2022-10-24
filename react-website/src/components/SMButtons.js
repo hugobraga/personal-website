@@ -36,10 +36,9 @@ const SMButtons = () => {
             />
             <SocialIcon
                 network="telegram"
-                url="https://t.me/bragah"
                 target="_blank"
                 fgColor="#ffffff"
-            />                             
+            /> 
         </div>
     );
 }

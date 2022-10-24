@@ -34,11 +34,6 @@ const SMButtons = () => {
                 target="_blank"
                 fgColor="#ffffff"
             />
-            <SocialIcon
-                network="telegram"
-                target="_blank"
-                fgColor="#ffffff"
-            /> 
         </div>
     );
 }

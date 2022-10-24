@@ -9,7 +9,7 @@ const SMButtons = () => {
     return (
         <div className="hor-centered">
             <SocialIcon
-                url="http://linkedin.com/in/bragahugo"
+                url="https://linkedin.com/in/bragahugo"
                 target="_blank"
                 // bgColor="#0a66c2"
                 bgColor="#0085ae"
@@ -17,14 +17,14 @@ const SMButtons = () => {
             />
 
             <SocialIcon
-                url="http://instagram.com/hugovvbraga"
+                url="https://instagram.com/hugovvbraga"
                 target="_blank"
                 bgColor="#d6249f"
                 fgColor="#ffffff"
             />
 
             <SocialIcon
-                url="http://twitter.com/_hugobraga"
+                url="https://twitter.com/_hugobraga"
                 target="_blank"
                 fgColor="#ffffff"
             />
@@ -33,7 +33,12 @@ const SMButtons = () => {
                 url="https://www.facebook.com/hugovvbraga"
                 target="_blank"
                 fgColor="#ffffff"
-            />                 
+            />
+            <SocialIcon
+                url="https://t.me/bragah"
+                target="_blank"
+                fgColor="#ffffff"
+            />                             
         </div>
     );
 }

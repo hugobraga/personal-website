@@ -27,7 +27,13 @@ const SMButtons = () => {
                 url="http://twitter.com/_hugobraga"
                 target="_blank"
                 fgColor="#ffffff"
-            />     
+            />
+
+            <SocialIcon
+                url="https://www.facebook.com/hugovvbraga"
+                target="_blank"
+                fgColor="#ffffff"
+            />                 
         </div>
     );
 }

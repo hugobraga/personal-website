@@ -118,7 +118,7 @@ const SMButtons8 = () => {
           window.open("https://sites.google.com/site/hugobraga", "_blank");
         }}
       >
-        Personal Website
+        Academic Website
       </Button>
     </Grid>
   );

@@ -20,7 +20,7 @@ const SMButtons = () => {
                 url="https://github.com/hugobraga"
                 target="_blank"
                 // bgColor="#0a66c2"
-                //bgColor="#0085ae"
+                bgColor="#000000"
                 fgColor="#ffffff"
             />            
 

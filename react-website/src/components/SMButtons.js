@@ -38,7 +38,7 @@ const SMButtons = () => {
             />
 
             <SocialIcon
-                url="https://www.facebook.com/hugovvbraga"
+                url="https://www.facebook.com/hugobraga.io"
                 target="_blank"
                 fgColor="#ffffff"
             />

@@ -25,7 +25,7 @@ const SMButtons = () => {
             />            
 
             <SocialIcon
-                url="https://instagram.com/hugovvbraga"
+                url="https://instagram.com/hugobraga.io"
                 target="_blank"
                 bgColor="#d6249f"
                 fgColor="#ffffff"
@@ -38,7 +38,7 @@ const SMButtons = () => {
             />
 
             <SocialIcon
-                url="https://www.facebook.com/hugobraga.io"
+                url="https://www.facebook.com/hugovvbraga"
                 target="_blank"
                 fgColor="#ffffff"
             />

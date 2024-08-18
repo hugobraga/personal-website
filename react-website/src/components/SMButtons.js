@@ -2,46 +2,68 @@
 
 // import React from 'react';
 // import ReactDOM from 'react-dom';
-import { SocialIcon } from 'react-social-icons';
+// import { SocialIcon } from 'react-social-icons';
+
+// import { SocialIcon } from 'react-social-icons';
+// import LinkedInIcon from '@mui/icons-material/LinkedIn';
+// import GitHubIcon from '@mui/icons-material/GitHub';
+// import InstagramIcon from '@mui/icons-material/Instagram';
+// import TwitterIcon from '@mui/icons-material/Twitter';
+// import FacebookIcon from '@mui/icons-material/Facebook';
+
+import React from 'react';
+import { IconButton, Typography, Link } from '@mui/material';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import FacebookIcon from '@mui/icons-material/Facebook';
 import "../pages/Microblog.css";
 
 const SMButtons = () => {
     return (
         <div className="hor-centered">
-            <SocialIcon
-                url="https://linkedin.com/in/bragahugo"
-                target="_blank"
-                // bgColor="#0a66c2"
-                bgColor="#0085ae"
-                fgColor="#ffffff"
-            />
+      <IconButton
+        component={Link}
+        href="https://linkedin.com/in/bragahugo"
+        target="_blank"
+        color="primary"
+      >
+        <LinkedInIcon />
+      </IconButton>
+      <IconButton
+        component={Link}
+        href="https://github.com/hugobraga"
+        target="_blank"
+        color="primary"
+      >
+        <GitHubIcon />
+      </IconButton>
+      <IconButton
+        component={Link}
+        href="https://instagram.com/hugobraga.io"
+        target="_blank"
+        color="primary"
+      >
+        <InstagramIcon />
+      </IconButton>
+      <IconButton
+        component={Link}
+        href="https://twitter.com/_hugobraga"
+        target="_blank"
+        color="primary"
+      >
+        <TwitterIcon />        
+      </IconButton>  
 
-            <SocialIcon
-                url="https://github.com/hugobraga"
-                target="_blank"
-                // bgColor="#0a66c2"
-                bgColor="#000000"
-                fgColor="#ffffff"
-            />            
-
-            <SocialIcon
-                url="https://instagram.com/hugobraga.io"
-                target="_blank"
-                bgColor="#d6249f"
-                fgColor="#ffffff"
-            />
-
-            <SocialIcon
-                url="https://twitter.com/_hugobraga"
-                target="_blank"
-                fgColor="#ffffff"
-            />
-
-            <SocialIcon
-                url="https://www.facebook.com/hugovvbraga"
-                target="_blank"
-                fgColor="#ffffff"
-            />
+      <IconButton
+        component={Link}
+        href="https://www.facebook.com/hugovvbraga"
+        target="_blank"
+        color="primary"
+      >
+        <FacebookIcon />        
+      </IconButton>      
         </div>
     );
 }

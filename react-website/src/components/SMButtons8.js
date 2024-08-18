@@ -1,22 +1,26 @@
 import React, { FC } from "react";
-import { Grid, Button, makeStyles, withTheme } from "@material-ui/core";
+//import { Grid, Button, makeStyles, withTheme } from "@material-ui/core";
+import { Grid, Button, makeStyles } from "@mui/material";
 import "./SMButtons8.css";
-import { SocialIcon } from "react-social-icons";
+// import { SocialIcon } from "react-social-icons";
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import MailIcon from '@mui/icons-material';
 
 // import "./icons/EmailIcon";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import {
-  Instagram,
-  Whatsapp,
-} from "@trejgun/material-ui-icons-social-networks";
+// import {
+//   Instagram,
+//   Whatsapp,
+// } from "@trejgun/material-ui-icons-social-networks";
 
 import { Link } from "react-router-dom";
 
 const useStyles = makeStyles(
   (theme) => ({
     button: {
-      margin: theme.spacing(1),
+      margin: 1,
       backgroundColor: "#3d3b3c",
       color: "white",
       padding: "15px",
@@ -24,7 +28,7 @@ const useStyles = makeStyles(
       fontWeight: "bold",
     },
     instabutton: {
-      margin: theme.spacing(1),
+      margin: 1,
       backgroundColor: "mediumvioletred",
       color: "white",
       padding: "15px",
@@ -37,7 +41,7 @@ const useStyles = makeStyles(
       textDecoration: "none"
     },    
     whatsappbutton: {
-      margin: theme.spacing(1),
+      margin: 1,
       backgroundColor: "limegreen",
       color: "white",
       padding: "15px",
@@ -45,7 +49,7 @@ const useStyles = makeStyles(
       fontWeight: "bold",
     },
     icon: {
-      marginRight: theme.spacing(1),
+      marginRight: 1,
       color: "white",
     },
   }),
@@ -65,12 +69,17 @@ const SMButtons8 = () => {
           // window.location.href = "http://wa.me/+5571992682584";
         }}
       >
-        <SocialIcon
+        {/* <SocialIcon
           network="whatsapp"
           bgColor="limegreen"
           fgColor="#ffffff"
           style={{ height: 20, width: 20 }}
-        />
+        /> */}
+        <IconButton className={classes.whatsappbutton}>
+          <WhatsAppIcon />  {/* Using WhatsAppIcon from @mui/icons-material */}
+          Contact me
+        </IconButton>
+
         {/* <Whatsapp className={classes.icon} />  */}
         Contact me
       </Button>
@@ -78,12 +87,17 @@ const SMButtons8 = () => {
         variant="outlined"
         className={classes.instabutton}
       >
-        <SocialIcon
+        {/* <SocialIcon
           network="instagram"
           bgColor="mediumvioletred"
           fgColor="#ffffff"
           style={{ height: 20, width: 20 }}
-        />
+        /> */}
+        <IconButton className={classes.instabutton}>
+          <InstagramIcon />  {/* Using InstagramIcon from @mui/icons-material */}
+          Contact me
+        </IconButton>
+
         {/* <Instagram className={classes.icon} />  */}
         <Link className={classes.instalink} to="/instalinks">Instagram Links</Link>
       </Button>
@@ -99,7 +113,7 @@ const SMButtons8 = () => {
       >
         Curriculum Vitae
       </Button>
-      <Button
+      {/* <Button
         variant="outlined"
         className={classes.button}
         onClick={(e) => {
@@ -107,10 +121,17 @@ const SMButtons8 = () => {
           e.preventDefault();
         }}
       >
-        {/* <FontAwesomeIcon icon={['fas', 'fa-envelope-square']} /> */}
-        {/* <EmailIcon /> */}
         Write me an E-Mail
-      </Button>
+      </Button> */}
+      <IconButton className={classes.button} onClick={(e) => {
+        window.location = "mailto:hugo@hugobraga.io";
+        e.preventDefault();
+      }}>
+        <MailIcon />  {/* Using MailIcon from @mui/icons-material */}
+        Write me an E-Mail
+      </IconButton>
+
+
       <Button
         variant="outlined"
         className={classes.button}

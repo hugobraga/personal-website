@@ -2,11 +2,11 @@ import React from "react";
 import "./Microblog.css";
 import ReactRoundedImage from "react-rounded-image";
 import MyPhoto from "./images/rosto.jpeg";
-import ReactWhatsapp from "react-whatsapp";
-import WhatsAppWidget from "react-whatsapp-widget";
+// import ReactWhatsapp from "react-whatsapp";
+// import WhatsAppWidget from "react-whatsapp-widget";
 import "react-whatsapp-widget/dist/index.css";
-import SMButtons6 from "../components/SMButtons6";
-import SMButtons7 from "../components/SMButtons7";
+// import SMButtons6 from "../components/SMButtons6";
+// import SMButtons7 from "../components/SMButtons7";
 import InstaButtons from "../components/InstaButtons";
 import { Link } from "react-router-dom";
 

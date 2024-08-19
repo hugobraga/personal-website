@@ -45,8 +45,6 @@
     ]
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "@react-buddy/ide-toolbox": "^2.4.0",
-    "@react-buddy/palette-mui": "^5.0.2"
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
   }
 }

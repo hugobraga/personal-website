@@ -3,6 +3,7 @@ import { IconButton, Link } from '@mui/material';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import XIcon from '@mui/icons-material/X';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import "../pages/Microblog.css";
@@ -36,12 +37,20 @@ const HomeRoundedButtons = () => {
             </IconButton>
             <IconButton
                 component={Link}
-                href="https://twitter.com/_hugobraga"
+                href="https://x.com/_hugobraga"
+                target="_blank"
+                style={{ backgroundColor: '#000000', color: 'white' }} // X Black
+            >
+                <XIcon />
+            </IconButton>            
+{/*}            <IconButton
+                component={Link}
+                href="https://x.com/_hugobraga"
                 target="_blank"
                 style={{ backgroundColor: '#1DA1F2', color: 'white' }} // Twitter Blue
             >
                 <TwitterIcon />
-            </IconButton>
+            </IconButton>*/}
 {/*            <IconButton
                 component={Link}
                 href="https://www.facebook.com/hugovvbraga"

@@ -1,9 +1,9 @@
 import React from "react";
-import SMRoundedButtons from "../components/SMRoundedButtons";
+import HomeRoundedButtons from "../components/HomeRoundedButtons";
 import "./Microblog.css";
 import MyPhoto from "./images/rosto.jpeg";
 // import "react-whatsapp-widget/dist/index.css";
-import SMRectangularButtons from "../components/SMRectangularButtons";
+import HomeRectangularButtons from "../components/HomeRectangularButtons";
 
 const Microblog = () => {
   return (
@@ -48,8 +48,8 @@ const Microblog = () => {
         <span className="linha-separadora">___________________________</span>
       </p>
       <h2></h2>
-      <SMRoundedButtons />
-      <SMRectangularButtons />
+      <HomeRoundedButtons />
+      <HomeRectangularButtons />
     </div>
   );
 };

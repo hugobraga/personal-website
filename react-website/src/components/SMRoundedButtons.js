@@ -7,7 +7,7 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import "../pages/Microblog.css";
 
-const SMButtons = () => {
+const SMRoundedButtons = () => {
     return (
         <div className="hor-centered">
             <IconButton
@@ -54,4 +54,4 @@ const SMButtons = () => {
     );
 }
 
-export default SMButtons;
+export default SMRoundedButtons;

@@ -1,9 +1,9 @@
 import React from "react";
-import SMButtons from "../components/SMButtons";
+import SMRoundedButtons from "../components/SMRoundedButtons";
 import "./Microblog.css";
 import MyPhoto from "./images/rosto.jpeg";
 // import "react-whatsapp-widget/dist/index.css";
-import SMButtons8 from "../components/SMButtons8";
+import SMRectangularButtons from "../components/SMRectangularButtons";
 
 const Microblog = () => {
   return (
@@ -48,8 +48,8 @@ const Microblog = () => {
         <span className="linha-separadora">___________________________</span>
       </p>
       <h2></h2>
-      <SMButtons />
-      <SMButtons8 />
+      <SMRoundedButtons />
+      <SMRectangularButtons />
     </div>
   );
 };

@@ -54,7 +54,7 @@ const IconStyles = {
   color: "white",
 };
 
-const SMButtons8 = () => {
+const SMRectangularButtons = () => {
   return (
     <Grid container direction="column" justifyContent="center" alignItems="center">
       <WhatsAppButton
@@ -97,4 +97,4 @@ const SMButtons8 = () => {
   );
 };
 
-export default SMButtons8;
+export default SMRectangularButtons;

@@ -1,39 +1,32 @@
 import React from "react";
-import "./Microblog.css";
-import ReactRoundedImage from "react-rounded-image";
-import MyPhoto from "./images/rosto.jpeg";
-// import ReactWhatsapp from "react-whatsapp";
-// import WhatsAppWidget from "react-whatsapp-widget";
-import "react-whatsapp-widget/dist/index.css";
-// import SMButtons6 from "../components/SMButtons6";
-// import SMButtons7 from "../components/SMButtons7";
 import InstaButtons from "../components/InstaButtons";
 import { Link } from "react-router-dom";
 
 const Instalinks = () => {
   return (
-    <div>
-      <div>
-        <h6></h6>
-        <div className="hor-centered">
-          <ReactRoundedImage
-            image={MyPhoto}
-            roundedSize="0"
-            imageWidth="110"
-            imageHeight="110"
-          />
-        </div>
-        <span className={["myname"]}>Hugo Braga</span>
-      </div>
-      <h2></h2>
-      <p className="hor-centered">Links do Instagram</p>
-      <p className="hor-centered">
+    <div style={{ textAlign: "center", marginTop: "20px" }}>
+      <img
+        src="images/rosto.jpeg"
+        alt="Hugo Braga"
+        style={{
+          borderRadius: "50%",
+          width: "150px",
+          height: "150px",
+          objectFit: "cover"
+        }}
+      />
+      <h1>Hugo Braga</h1>
+      <h2>Links do Instagram</h2>
+
+      {/* Link para a Home */}
+      <div style={{ marginTop: "20px" }}>
         <Link to="/">Home</Link>
-      </p>
-      <p>
-        <span className="linha-separadora">___________________________</span>
-      </p>
-      <h2></h2>
+      </div>
+
+      {/* Linha de separação */}
+      <hr style={{ margin: "40px 0" }} />
+
+      {/* Botões do InstaButtons */}
       <InstaButtons />
     </div>
   );

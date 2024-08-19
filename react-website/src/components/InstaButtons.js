@@ -8,7 +8,7 @@ const StyledButton = styled(Button)(({ theme }) => ({
   backgroundColor: "#3d3b3c",
   color: "white",
   padding: "15px",
-  width: "50%",
+  width: "250px",
   fontWeight: "bold",
 }));
 

@@ -14,7 +14,7 @@ const HomeRoundedButtons = () => {
                 component={Link}
                 href="https://linkedin.com/in/bragahugo"
                 target="_blank"
-                color="primary"
+                style={{ backgroundColor: '#0A66C2', color: 'white' }} // LinkedIn Blue
             >
                 <LinkedInIcon />
             </IconButton>
@@ -22,7 +22,7 @@ const HomeRoundedButtons = () => {
                 component={Link}
                 href="https://github.com/hugobraga"
                 target="_blank"
-                color="primary"
+                style={{ backgroundColor: '#333', color: 'white' }} // GitHub Black
             >
                 <GitHubIcon />
             </IconButton>
@@ -30,7 +30,7 @@ const HomeRoundedButtons = () => {
                 component={Link}
                 href="https://instagram.com/hugobraga.io"
                 target="_blank"
-                color="primary"
+                style={{ backgroundColor: '#E1306C', color: 'white' }} // Instagram Pink
             >
                 <InstagramIcon />
             </IconButton>
@@ -38,18 +38,18 @@ const HomeRoundedButtons = () => {
                 component={Link}
                 href="https://twitter.com/_hugobraga"
                 target="_blank"
-                color="primary"
+                style={{ backgroundColor: '#1DA1F2', color: 'white' }} // Twitter Blue
             >
                 <TwitterIcon />
-            </IconButton>  
-            <IconButton
+            </IconButton>
+{/*            <IconButton
                 component={Link}
                 href="https://www.facebook.com/hugovvbraga"
                 target="_blank"
-                color="primary"
+                style={{ backgroundColor: '#1877F2', color: 'white' }} // Facebook Blue
             >
                 <FacebookIcon />        
-            </IconButton>      
+            </IconButton>*/}
         </div>
     );
 }

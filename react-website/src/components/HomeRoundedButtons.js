@@ -6,6 +6,8 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import XIcon from '@mui/icons-material/X';
 import HuggingFaceIcon from "./icons/HuggingFaceIcon";
 import KaggleIcon from "./icons/KaggleIcon";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBluesky } from '@fortawesome/free-brands-svg-icons'; // Import the Bluesky icon
 import TwitterIcon from '@mui/icons-material/Twitter';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import "../pages/Microblog.css";
@@ -44,6 +46,14 @@ const HomeRoundedButtons = () => {
                 style={{ backgroundColor: '#000000', color: 'white' }} // X Black
             >
                 <XIcon />
+            </IconButton>
+            <IconButton
+                component={Link}
+                href="https://bsky.app/profile/hugobraga.io" // Replace with your actual Bluesky profile URL
+                target="_blank"
+                style={{ backgroundColor: '#00AAFF', color: 'white' }} // Bluesky Blue
+            >
+                <FontAwesomeIcon icon={faBluesky} />
             </IconButton>
             <IconButton
                 component={Link}

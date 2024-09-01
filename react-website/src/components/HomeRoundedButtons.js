@@ -5,9 +5,8 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import XIcon from '@mui/icons-material/X';
 import HuggingFaceIcon from "./icons/HuggingFaceIcon";
-import KaggleIcon from "./icons/KaggleIcon";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBluesky } from '@fortawesome/free-brands-svg-icons'; // Import the Bluesky icon
+import { faBluesky, faKaggle } from '@fortawesome/free-brands-svg-icons'; // Import the Bluesky and Kaggle icons
 import TwitterIcon from '@mui/icons-material/Twitter';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import "../pages/Microblog.css";
@@ -69,7 +68,7 @@ const HomeRoundedButtons = () => {
                 target="_blank"
                 style={{ backgroundColor: '#20BEFF', color: 'white' }} // Kaggle Blue
             >
-                <KaggleIcon />
+                <FontAwesomeIcon icon={faKaggle} />
             </IconButton>
 {/*}            <IconButton
                 component={Link}

@@ -4,8 +4,9 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import XIcon from '@mui/icons-material/X';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import FacebookIcon from '@mui/icons-material/Facebook';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBluesky, faKaggle } from '@fortawesome/free-brands-svg-icons'; // Import the Bluesky and Kaggle icons
+import HuggingFaceIcon from "./icons/HuggingFaceIcon";
 import "../pages/Microblog.css";
 
 const HomeRoundedButtons = () => {
@@ -42,25 +43,32 @@ const HomeRoundedButtons = () => {
                 style={{ backgroundColor: '#000000', color: 'white' }} // X Black
             >
                 <XIcon />
-            </IconButton>            
-{/*}            <IconButton
+            </IconButton>
+            <IconButton
                 component={Link}
-                href="https://x.com/_hugobraga"
+                href="https://bsky.app/profile/hugobraga.io" // Replace with your actual Bluesky profile URL
                 target="_blank"
-                style={{ backgroundColor: '#1DA1F2', color: 'white' }} // Twitter Blue
+                style={{ backgroundColor: '#00AAFF', color: 'white' }} // Bluesky Blue
             >
-                <TwitterIcon />
-            </IconButton>*/}
-{/*            <IconButton
+                <FontAwesomeIcon icon={faBluesky} />
+            </IconButton>
+            <IconButton
+                component="a"
+                href="https://huggingface.co/hugobraga"
+                target="_blank"
+                style={{ backgroundColor: '#ffcc4d', color: '#664500' }} // Hugging Face Yellow
+            >
+                <HuggingFaceIcon />
+            </IconButton>
+            <IconButton
                 component={Link}
-                href="https://www.facebook.com/hugovvbraga"
+                href="https://www.kaggle.com/bragahugo"
                 target="_blank"
-                style={{ backgroundColor: '#1877F2', color: 'white' }} // Facebook Blue
+                style={{ backgroundColor: '#20BEFF', color: 'white' }} // Kaggle Blue
             >
-                <FacebookIcon />        
-            </IconButton>*/}
+                <FontAwesomeIcon icon={faKaggle} />
+            </IconButton>
         </div>
     );
 }
-
 export default HomeRoundedButtons;

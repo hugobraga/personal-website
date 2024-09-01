@@ -1,5 +1,5 @@
 import React from 'react';
-import { IconButton, SvgIcon } from '@mui/material';
+import { SvgIcon } from '@mui/material';
 import { ReactComponent as HuggingFaceSvg } from './HuggingFaceLogo.svg'; // Update with the path to your SVG
 
 const HuggingFaceIcon = (props) => {

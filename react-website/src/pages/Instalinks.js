@@ -2,8 +2,10 @@ import React from "react";
 import InstaButtons from "../components/InstaButtons";
 import { Link } from "react-router-dom";
 import MyPhoto from "./images/rosto.jpeg";
+import { useTranslation } from "react-i18next"; // Import the useTranslation hook
 
 const Instalinks = () => {
+    const { t } = useTranslation(); // Initialize translation hook
   return (
       <div style={{textAlign: "center", marginTop: "20px"}}>
           <div>
@@ -24,7 +26,7 @@ const Instalinks = () => {
           </div>
 
           <p className="hor-centered">
-              Links do Instagram
+              {t('instagram_links')}
           </p>
 
           {/* Link para a Home */}

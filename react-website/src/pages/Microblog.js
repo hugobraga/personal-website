@@ -1,11 +1,13 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import HomeRoundedButtons from "../components/HomeRoundedButtons";
 import "./Microblog.css";
 import MyPhoto from "./images/rosto.jpeg";
-// import "react-whatsapp-widget/dist/index.css";
 import HomeRectangularButtons from "../components/HomeRectangularButtons";
 
 const Microblog = () => {
+  const { t } = useTranslation(); // Initialize translation hook
+
   return (
     <div>
       <div>
@@ -22,26 +24,24 @@ const Microblog = () => {
             }}
           />
         </div>
-        <span className={["myname"]}>Hugo Braga</span>
+        <span className="myname">Hugo Braga</span>
       </div>
 
       <p className="hor-centered">
         <span className="small-picture">💡</span>
-        Entrepreneur
+        {t('entrepreneur')}
       </p>
       <p className="hor-centered">
         <span className="small-picture">🎓</span>
-        PhD in Computer Science
+        {t('phd')}
       </p>
       <p>
         <span className="linha-separadora">___________________________</span>
       </p>
-      <p className="hor-centered">I'm open to Entrepreneurship!</p>
+      <p className="hor-centered">{t('open_to_entrepreneurship')}</p>
+      <p className="hor-centered">{t('innovate_amazonas')}</p>
       <p className="hor-centered">
-        Let's innovate in Amazonas state,
-      </p>
-      <p className="hor-centered">
-        heart of the Amazon Rainforest
+        {t('heart_of_amazon')}
         <span className="small-picture">🌳</span>
       </p>
       <p>

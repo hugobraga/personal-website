@@ -5,6 +5,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import MailIcon from '@mui/icons-material/Mail';
 import { styled } from "@mui/system";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next"; // Import the useTranslation hook
 
 // Define the custom styled components
 const StyledButton = styled(Button)(({ theme }) => ({
@@ -55,6 +56,8 @@ const IconStyles = {
 };
 
 const HomeRectangularButtons = () => {
+  const { t } = useTranslation(); // Initialize translation hook
+
   return (
     <Grid container direction="column" justifyContent="center" alignItems="center">
       <WhatsAppButton
@@ -62,19 +65,19 @@ const HomeRectangularButtons = () => {
         onClick={() => window.open("http://wa.me/+5571992682584", "_blank")}
       >
         <WhatsAppIcon style={IconStyles} />
-        Contact me
+        {t('contact_me')}
       </WhatsAppButton>
 
       <InstaButton variant="outlined">
         <InstagramIcon style={IconStyles} />
-        <StyledLink to="/instalinks">Instagram Links</StyledLink>
+        <StyledLink to="/instalinks">{t('instagram_links')}</StyledLink>
       </InstaButton>
 
       <StyledButton
         variant="outlined"
         onClick={() => window.open("https://drive.google.com/file/d/1CvUlSSo4SrD5u09h3TDK8V5PRLqLbJEm/view?usp=sharing", "_blank")}
       >
-        Curriculum Vitae
+        {t('curriculum_vitae')}
       </StyledButton>
 
       <StyledIconButton
@@ -84,14 +87,14 @@ const HomeRectangularButtons = () => {
         }}
       >
         <MailIcon style={IconStyles} />
-        Write me an E-Mail
+        {t('write_me_email')}
       </StyledIconButton>
 
       <StyledButton
         variant="outlined"
         onClick={() => window.open("https://sites.google.com/site/hugobraga", "_blank")}
       >
-        Academic Website
+        {t('academic_website')}
       </StyledButton>
     </Grid>
   );

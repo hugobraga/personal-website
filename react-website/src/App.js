@@ -15,6 +15,10 @@ import Instalinks from './pages/Instalinks';
 import { useTranslation } from 'react-i18next';
 import './i18n'; // Assuming you have an i18n.js file set up as per the previous instructions
 
+
+// Importing the QR Code component
+import { QRCodeCanvas } from 'qrcode.react';
+
 const App = () => {
   const { i18n, t } = useTranslation(); // Initializing translation
 
@@ -47,6 +51,11 @@ const App = () => {
           <Route path="/instalinks" element={<Instalinks />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
+
+        {/* QR Code for https://hugobraga.io */}
+        <div style={{ display: 'flex', justifyContent: 'center', marginTop: '20px' }}>
+          <QRCodeCanvas value="https://hugobraga.io" size={128} />
+        </div>        
       </div>
     </Router>
   );

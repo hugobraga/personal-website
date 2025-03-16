@@ -18,6 +18,15 @@ const InstaButtons = () => {
       <Grid item>
         <StyledButton
           variant="outlined"
+          onClick={() => window.open("https://prpg.unicamp.br/wp-content/uploads/sites/10/2025/01/livro-diretrizes-ia-1.pdf", "_blank")}
+        >
+          Livro: Diretrizes para o uso ético e responsável da Inteligência Artificial Generativa
+        </StyledButton>
+      </Grid>
+
+      <Grid item>
+        <StyledButton
+          variant="outlined"
           onClick={() => window.open("https://emergebrasil.in/amazonia/", "_blank")}
         >
           Emerge Amazônia

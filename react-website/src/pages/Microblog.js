@@ -2,7 +2,7 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import HomeRoundedButtons from "../components/HomeRoundedButtons";
 import "./Microblog.css";
-import MyPhoto from "./images/rosto.jpeg";
+import MyPhoto from "./images/hugobraga.png";
 import HomeRectangularButtons from "../components/HomeRectangularButtons";
 
 const Microblog = () => {

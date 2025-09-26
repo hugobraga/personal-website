@@ -1,7 +1,7 @@
 import React from "react";
 import InstaButtons from "../components/InstaButtons";
 import { Link } from "react-router-dom";
-import MyPhoto from "./images/rosto.jpeg";
+import MyPhoto from "./images/hugobraga.png";
 import { useTranslation } from "react-i18next"; // Import the useTranslation hook
 
 const Instalinks = () => {

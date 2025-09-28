@@ -4,10 +4,9 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   esbuild: {
-    // Mapear explicitamente extensões comuns para JSX para que o scanner do esbuild
-    // consiga parsear arquivos .js que contenham JSX durante o build/dev.
-    loader: { '.js': 'jsx', '.mjs': 'jsx', '.cjs': 'jsx' },
-    include: /src\/.*\.[jt]sx?$/
+    // Forçar o loader JSX por padrão. O mapeamento de extensões é tratado em
+    // optimizeDeps.esbuildOptions (isso evita o erro "loader must be a string").
+    loader: 'jsx'
   },
   optimizeDeps: {
     esbuildOptions: {

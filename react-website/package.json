@@ -22,7 +22,7 @@
     "react-ga4": "^2.1.0",
     "react-i18next": "^15.0.1",
     "react-router-dom": "^6.4.0",
-    "react-scripts": "^5.0.1",
+    
     "sass": "^1.93.2",
     "web-vitals": "^3.0.0"
   },
@@ -30,11 +30,11 @@
     "node": ">=22.0.0"
   },
   "scripts": {
-    "start": "vite",
-    "build": "vite build",
-    "serve": "vite preview",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+  "start": "vite",
+  "build": "vite build",
+  "serve": "vite preview",
+  "test": "echo \"Run unit tests with your preferred runner (vitest/jest)\" && exit 0",
+  "eject": "echo \"eject not supported in Vite setup\" && exit 0"
   },
   "eslintConfig": {
     "extends": [

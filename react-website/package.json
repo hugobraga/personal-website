@@ -55,11 +55,12 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
-  }
-
-  ,"overrides": {
-    "@babel/helpers": "7.26.10",
-    "@babel/runtime": "7.26.10",
+  },
+  "overrides": {
+    "@babel/core": "7.25.9",
+    "@babel/helpers": "7.25.9",
+    "@babel/runtime": "7.25.9",
+    "@babel/traverse": "7.25.9",
     "form-data": "4.0.4",
     "http-proxy-middleware": "2.0.9",
     "micromatch": "4.0.8",

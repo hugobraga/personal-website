@@ -7,6 +7,7 @@ import XIcon from '@mui/icons-material/X';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBluesky, faKaggle } from '@fortawesome/free-brands-svg-icons'; // Import the Bluesky and Kaggle icons
 import HuggingFaceIcon from "./icons/HuggingFaceIcon";
+import NostrIcon from "./icons/NostrIcon";
 import "../pages/Microblog.css";
 
 const HomeRoundedButtons = () => {
@@ -27,6 +28,14 @@ const HomeRoundedButtons = () => {
                 style={{ backgroundColor: '#333', color: 'white' }} // GitHub Black
             >
                 <GitHubIcon />
+            </IconButton>
+            <IconButton
+                component={Link}
+                href="https://primal.net/p/nprofile1qqsxphj3unya69pnsmk8nldntzyqs6k02ysye5ex50nyfrl3y9x54xcjc08fe"
+                target="_blank"
+                style={{ backgroundColor: '#800080', color: 'white' }} // Nostr Purple
+            >
+                <NostrIcon />
             </IconButton>
             <IconButton
                 component={Link}

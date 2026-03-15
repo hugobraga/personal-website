@@ -89,13 +89,6 @@ const HomeRectangularButtons = () => {
         <MailIcon style={IconStyles} />
         {t('write_me_email')}
       </StyledIconButton>
-
-      <StyledButton
-        variant="outlined"
-        onClick={() => window.open("https://sites.google.com/site/hugobraga", "_blank")}
-      >
-        {t('academic_website')}
-      </StyledButton>
     </Grid>
   );
 };

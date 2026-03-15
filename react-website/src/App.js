@@ -20,7 +20,7 @@ import './i18n'; // Assuming you have an i18n.js file set up as per the previous
 import { QRCodeCanvas } from 'qrcode.react';
 
 const App = () => {
-  const { i18n, t } = useTranslation(); // Initializing translation
+  const { i18n } = useTranslation(); // Initializing translation
 
   useEffect(() => {
     const { measurementId } = config.googleAnalytics;

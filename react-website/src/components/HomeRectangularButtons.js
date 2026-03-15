@@ -73,13 +73,6 @@ const HomeRectangularButtons = () => {
         <StyledLink to="/instalinks">{t('instagram_links')}</StyledLink>
       </InstaButton>
 
-      <StyledButton
-        variant="outlined"
-        onClick={() => window.open("https://drive.google.com/file/d/1CvUlSSo4SrD5u09h3TDK8V5PRLqLbJEm/view?usp=sharing", "_blank")}
-      >
-        {t('curriculum_vitae')}
-      </StyledButton>
-
       <StyledIconButton
         onClick={(e) => {
           window.location = "mailto:hugo@hugobraga.io";

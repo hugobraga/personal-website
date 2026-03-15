@@ -11,7 +11,7 @@ const Microblog = () => {
   return (
     <div>
       <div>
-        <h6></h6>
+        <div style={{ height: '20px' }}></div>
         <div className="hor-centered">
           <img
             src={MyPhoto}
@@ -47,7 +47,7 @@ const Microblog = () => {
       <p>
         <span className="linha-separadora">___________________________</span>
       </p>
-      <h2></h2>
+      <div style={{ height: '30px' }}></div>
       <HomeRoundedButtons />
       <HomeRectangularButtons />
     </div>

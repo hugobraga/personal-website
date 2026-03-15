@@ -9,7 +9,7 @@ const Instalinks = () => {
   return (
       <div style={{textAlign: "center", marginTop: "20px"}}>
           <div>
-              <h6></h6>
+              <div style={{ height: '20px' }}></div>
               <div className="hor-centered">
                   <img
                       src={MyPhoto}

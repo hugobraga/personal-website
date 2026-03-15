@@ -7,16 +7,6 @@ import { styled } from "@mui/system";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next"; // Import the useTranslation hook
 
-// Define the custom styled components
-const StyledButton = styled(Button)(({ theme }) => ({
-  margin: theme.spacing(1),
-  backgroundColor: "#3d3b3c",
-  color: "white",
-  padding: "15px",
-  width: "50%",
-  fontWeight: "bold",
-}));
-
 const InstaButton = styled(Button)(({ theme }) => ({
   margin: theme.spacing(1),
   backgroundColor: "mediumvioletred",
